@@ -37,16 +37,6 @@ def solve(guardLog):
             mostSleepTimePerMinute = asleepOnThatMinute
     return mostSleepyGuard * mostSleepyMinute
 
-
-def isValid(claimedFabric, h, startingX, startingY, w):
-    for x in range(startingX, startingX + w):
-        for y in range(startingY, startingY + h):
-            location = (x, y)
-            if claimedFabric[location] != 1:
-                return False
-    return True
-
-
 def inputToVariables(guardEntry):
     splitEntry = guardEntry.split(" ")
     hoursAndMinutes = splitEntry[1].strip("]").split(":")
