@@ -11,8 +11,6 @@ def solve(state, rulesList):
     steadyStateDifference = 0
     steadyStateCount = 0
     for i in range(0,loopTimes):
-        if i % 100 == 0:
-            print("iter", i, lastStateValue, steadyStateDifference, steadyStateCount)
         newState = ".."
 
         firstFilledPot = state.index("#")
