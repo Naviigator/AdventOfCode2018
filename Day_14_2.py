@@ -1,3 +1,5 @@
+import time
+
 def solve(count):
     recipeBook = "37"
     indexes = [0, 1]
@@ -14,4 +16,6 @@ def solve(count):
 
 if __name__ == '__main__':
     count = open('./input/Day_14.txt', 'r').read()
+    startTime = time.time()
     print(solve(count))
+    print("--- %s seconds ---" % (time.time() - startTime))
